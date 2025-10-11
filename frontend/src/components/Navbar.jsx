@@ -21,7 +21,7 @@ const Navbar = () => {
     <div className='w-[100%] flex bg-[#192134] items-center justify-between pl-7 pr-7 py-5 font-medium'>
       <Link to='/'><img src={assets.logo_grabzio} className="w-30" alt="" /></Link>
 
-      <ul className='hidden sm:flex gap-5 text-sm text-white'>
+      <ul className='hidden sm:flex gap-5 text-sm text-white items-center'>
 
         <NavLink to='/' className='flex flex-col items-center gap-1'>
           <p>HOME</p>
@@ -42,6 +42,9 @@ const Navbar = () => {
           <p>CONTACT</p>
           <hr className='w-2/4 border-none h-[1.5px] bg-white hidden' />
         </NavLink>
+
+
+        <Link to='https://ecommerce-app-admin-sand.vercel.app/'><button className='bg-[#27344F] text-white text-l px-4 py-2 rounded-xl'>admin</button></Link>
       </ul>
 
       <div className='flex items-center gap-6'>
